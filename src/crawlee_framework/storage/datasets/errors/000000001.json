@@ -1,0 +1,25 @@
+{
+  "id": "RlCYlo2EFDU2Z8f",
+  "url": "https://www.carrefour.es",
+  "error": "Page.goto: Target page, context or browser has been closed\nCall log:\n  - navigating to \"https://www.carrefour.es/\", waiting until \"load\"\n",
+  "request": {
+    "url": "https://www.carrefour.es",
+    "method": "GET",
+    "headers": {},
+    "payload": null,
+    "user_data": {
+      "__crawlee": {
+        "state": 5,
+        "lastProxyTier": 0,
+        "forefront": true,
+        "session_id": "1"
+      }
+    },
+    "retry_count": 0,
+    "no_retry": false,
+    "loaded_url": null,
+    "handled_at": "2025-08-24 18:34:12.002764+00:00",
+    "unique_key": "https://www.carrefour.es",
+    "id": "RlCYlo2EFDU2Z8f"
+  }
+}

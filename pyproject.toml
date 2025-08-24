@@ -1,0 +1,17 @@
+[project]
+name = "python-flakes-templates"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "urllib3>=2.2.3",
+    "litestar==2.17.0",
+    "uvicorn",
+    "prefect==3.4.0",
+    "prefect-docker==0.6.4",
+    "prefect-aws==0.5.10",
+    "crawlee==0.6.11",
+    "playwright==1.54.0",
+    "camoufox==0.4.11"
+]
