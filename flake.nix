@@ -69,7 +69,7 @@
                 nodejs
                 playwright
                 playwright-driver
-                firefox
+                firefox-bin
               ];
 
               env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
@@ -96,7 +96,7 @@
                 pkgs.gtk3
               ];
 
-              env.FIREFOX_PATH = "${pkgs.firefox}/bin/firefox";
+              env.FIREFOX_PATH = "${pkgs.firefox-bin}/bin/firefox";
               env.PLAYWRIGHT_PYTHON_PATH = "${pkgs.python312}/bin/python3";
               env.PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1";
               env.PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
