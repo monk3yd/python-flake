@@ -3,10 +3,16 @@
     # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     devenv.url = "github:cachix/devenv";
+    niv.url = "github:monk3yd/niv";
   };
 
   outputs =
-    { nixpkgs, devenv, ... }@inputs:
+    {
+      nixpkgs,
+      devenv,
+      niv,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -16,6 +22,7 @@
         };
         overlays = [ ];
       };
+      niv-package = niv.packages.${system}.default;
     in
     {
 
@@ -70,6 +77,7 @@
                 playwright
                 playwright-driver
                 firefox-bin
+                niv-package
               ];
 
               env.LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
