@@ -77,6 +77,9 @@
                 playwright
                 playwright-driver
                 firefox-bin
+
+                visidata
+
                 niv-package
               ];
 
