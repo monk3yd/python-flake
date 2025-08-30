@@ -70,8 +70,12 @@
                 python312Packages.black
                 python312Packages.ruff
                 python312Packages.reuse
+                python312Packages.debugpy
 
                 python312Packages.playwright
+
+                pulumi
+                pulumiPackages.pulumi-python
 
                 nodejs
                 playwright

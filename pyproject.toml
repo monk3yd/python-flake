@@ -20,5 +20,8 @@ dependencies = [
 dev = [
     "ruff>=0.6.7",
     "debugpy==1.8.15",
-    "pyright==1.1.404"
+    "pyright==1.1.404",
+    "pulumi==3.192.0",
+    "pulumi-aws==7.6.0",
+    "pulumi-awsx===3.0.0"
 ]
